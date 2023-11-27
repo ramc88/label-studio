@@ -370,7 +370,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # if FORCE_SCRIPT_NAME:
 #    STATIC_URL = FORCE_SCRIPT_NAME + STATIC_URL
-logger.info(f'=> Static URL is set to: {STATIC_URL}')
+logger.info(f'=> Static URL is set to: {BASE_DIR}{STATIC_URL}')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_build')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
